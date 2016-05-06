@@ -16,5 +16,13 @@ public class CourseDao {
 		PreparedStatement pstmt=conn.prepareStatement(sb.toString().replaceFirst("and", "where"));
 		return pstmt.executeQuery();
 	}
-
+	public static int CourseAdd(Connection con,Course course) throws Exception{
+		String sql="insert into t_course values(?,?,?)";
+		PreparedStatement pstmt=con.prepareStatement(sql);
+		pstmt.setInt(1, course.getCid());
+		pstmt.setString(2, course.getCname());
+		pstmt.setInt(3, course.getTid());
+		
+		return pstmt.executeUpdate();
+	}
 }

@@ -9,6 +9,8 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JMenu;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class TeacherMainForm extends JFrame {
 
@@ -49,6 +51,11 @@ public class TeacherMainForm extends JFrame {
 		menuBar.add(mnNewMenu);
 		
 		JMenuItem mntmNewMenuItem = new JMenuItem("\u6DFB\u52A0\u8BFE\u7A0B");
+		mntmNewMenuItem.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				new TeacherAddForm().setVisible(true);
+			}
+		});
 		mnNewMenu.add(mntmNewMenuItem);
 		
 		JMenuItem menuItem = new JMenuItem("\u6DFB\u52A0\u6210\u7EE9");
