@@ -13,7 +13,6 @@ public class RegisterDao {
 		pstmt.setString(2, user.getPsd());
 		pstmt.setString(3, "2");		
 		return pstmt.executeUpdate();
-		//return 0;
 		
 	}
 
