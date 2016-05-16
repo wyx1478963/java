@@ -78,19 +78,16 @@ public class Register extends JFrame {
 		JButton submit_btn = new JButton("\u63D0\u4EA4");
 		submit_btn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				user=new User(user_txt.getText(),psd_txt.getText(),1);
+				/*user=new User(user_txt.getText(),psd_txt.getText(),1);
 				jdbc=new JDBC();
 				try {
 					conn=jdbc.getCon();
 					if(user_txt.getText().equals(""))
 					{
-						JOptionPane.showMessageDialog(null, "用户名不能为空！");
-				
-						
+						JOptionPane.showMessageDialog(null, "用户名不能为空！");										
 					}
 					else if(psd_txt.getText().equals(""))
-						JOptionPane.showMessageDialog(null, "密码不能为空！");
-					
+						JOptionPane.showMessageDialog(null, "密码不能为空！");					
 					else if(psd_txt.getText().length()< 6)
 						JOptionPane.showMessageDialog(null, "密码不能少于6位！");
 					else if(!psd_txt.getText().equals(rpsd_txt.getText()))
@@ -107,7 +104,7 @@ public class Register extends JFrame {
 						// TODO Auto-generated catch block
 						e1.printStackTrace();
 					}
-				}
+				}*/
 				
 				
 			}

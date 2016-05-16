@@ -29,10 +29,8 @@ public class RTestSwing {
 	@Test
 	public void test() {
 		frame.textBox("user_txt").enterText("111");
-		//frame.textBox("user_txt").enterText("aaa");
 		frame.textBox("psd_txt").enterText("bbb");
 		frame.button("submit_btn").click();
-		//fail("Not yet implemented");
 	}
 
 }
