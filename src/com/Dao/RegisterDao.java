@@ -12,8 +12,12 @@ public class RegisterDao {
 		pstmt.setString(1, user.getUserName());
 		pstmt.setString(2, user.getPsd());
 		pstmt.setString(3, "2");		
+<<<<<<< HEAD
 		return pstmt.executeUpdate();*/
 		return 0;
+=======
+		return pstmt.executeUpdate();
+>>>>>>> 4351bd6c23b0095f6e48210baf14523e7039c8bd
 		
 	}
 
