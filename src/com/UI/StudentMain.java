@@ -186,6 +186,11 @@ public class StudentMain extends JFrame {
 		});*/
 		
 		JButton reg_btn = new JButton("\u6CE8\u518C");
+		reg_btn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				new Register().show();
+			}
+		});
 		
 		//psd_ptxt = new JPasswordField();
 		//psd_txt=new JTextField();

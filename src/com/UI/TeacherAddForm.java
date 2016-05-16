@@ -85,7 +85,6 @@ public class TeacherAddForm extends JFrame {
 					course.setCid(cid);
 					course.setCname(cname_txt.getText());
 					course.setTid(tid);
-			
 					try {
 						conn=new JDBC().getCon();
 						int flag=CourseDao.CourseAdd(conn, course);
@@ -96,8 +95,7 @@ public class TeacherAddForm extends JFrame {
 							cid_txt.setText("");
 							cname_txt.setText("");
 							tid_txt.setText("");
-							conn.close();
-							
+							conn.close();							
 						}
 							
 					} catch (Exception e) {
