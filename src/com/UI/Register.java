@@ -20,6 +20,7 @@ import javax.swing.border.EmptyBorder;
 import com.Dao.RegisterDao;
 import com.model.User;
 import com.util.JDBC;
+import com.util.StringUtil;
 
 public class Register extends JFrame {
 
@@ -73,27 +74,28 @@ public class Register extends JFrame {
 		rpsd_txt.setColumns(10);
 		psd_txt.setName("psd_txt");
 		user_txt.setName("user_txt");
+		rpsd_txt.setName("rpsd_txt");
 		
 		
 		JButton submit_btn = new JButton("\u63D0\u4EA4");
 		submit_btn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				/*user=new User(user_txt.getText(),psd_txt.getText(),1);
+				user=new User(user_txt.getText(),psd_txt.getText(),1);
 				jdbc=new JDBC();
 				try {
 					conn=jdbc.getCon();
-					if(user_txt.getText().equals(""))
+					if(StringUtil.tIsEmpty(user_txt))
 					{
 						JOptionPane.showMessageDialog(null, "用户名不能为空！");										
 					}
-					else if(psd_txt.getText().equals(""))
+					else if(StringUtil.tIsEmpty(psd_txt))
 						JOptionPane.showMessageDialog(null, "密码不能为空！");					
 					else if(psd_txt.getText().length()< 6)
 						JOptionPane.showMessageDialog(null, "密码不能少于6位！");
 					else if(!psd_txt.getText().equals(rpsd_txt.getText()))
 						JOptionPane.showMessageDialog(null, "两次输入密码不一致！");
 					else if(RegisterDao.Register(conn, user)==1)
-						JOptionPane.showMessageDialog(null, "注册成功");;
+						JOptionPane.showMessageDialog(null, "注册成功");
 				} catch (Exception e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
@@ -104,7 +106,7 @@ public class Register extends JFrame {
 						// TODO Auto-generated catch block
 						e1.printStackTrace();
 					}
-				}*/
+				}
 				
 				
 			}

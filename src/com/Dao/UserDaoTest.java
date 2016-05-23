@@ -26,7 +26,7 @@ public class UserDaoTest {
 		jdbc=new JDBC();
 		conn=jdbc.getCon();
 		
-	}
+	} 
 
 	@Test
 	public void test() throws Exception {

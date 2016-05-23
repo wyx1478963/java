@@ -29,8 +29,24 @@ public class RTestSwing {
 	@Test
 	public void test() {
 		frame.textBox("user_txt").enterText("111");
-		frame.textBox("psd_txt").enterText("bbb");
+		frame.textBox("psd_txt").enterText("123");
+		frame.textBox("rpsd_txt").enterText("123");
 		frame.button("submit_btn").click();
+		
+		
 	}
+	
+	@Test
+	public void test1() {
+		frame.textBox("user_txt").enterText("111");
+		frame.textBox("psd_txt").enterText("123");
+		frame.textBox("rpsd_txt").enterText("123");
+		frame.button("submit_btn").click();
+		
+		
+	}
+
+	
+	
 
 }

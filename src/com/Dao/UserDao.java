@@ -24,7 +24,8 @@ public class UserDao {
 			loginUser =new User(user.getUserName(),user.getPsd(),2);
 			
 		}
-		return loginUser;		
+		return loginUser;	
+	
 	}
 	static public User teacher_login(Connection conn,User user) throws Exception{
 		User loginUser=null;

@@ -22,12 +22,18 @@ public class TestSwing {
 		frame=new FrameFixture(new StudentMain() );
 		frame.show();
 	}
-	public void tearDown(){
-		frame.cleanUp();		
-	}
+	//public void tearDown(){
+		//frame.cleanUp();		
+	//}
 
 	@Test
 	public void test() {		
+		frame.textBox("user_txt").enterText("teacher");
+		frame.textBox("psd_txt").enterText("123456");
+		frame.button("login_btn").click();
+	}
+	@Test
+	public void test1() {		
 		frame.textBox("user_txt").enterText("teacher");
 		frame.textBox("psd_txt").enterText("123456");
 		frame.button("login_btn").click();

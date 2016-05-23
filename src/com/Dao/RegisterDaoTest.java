@@ -18,13 +18,13 @@ public class RegisterDaoTest {
 	public void setUp() throws Exception {
 		jdbc=new JDBC();
 		conn=jdbc.getCon();
-		user=new User("123","123",1);
+		user=new User("123","123456",2);
 		
 	}
 
 	@Test
 	public void test() throws Exception {
-		if(RegisterDao.Register(conn, user)!=0)
+		if(RegisterDao.Register(conn, user)==0)
 			fail("Not yet implemented");
 	}
 
